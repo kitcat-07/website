@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Colors */
+  --color-primary: #1a237e; /* Deep authority, trust-building foundation - indigo-900 */
+  --color-primary-50: #e8eaf6; /* Light primary shade - indigo-50 */
+  --color-primary-100: #c5cae9; /* Light primary shade - indigo-100 */
+  --color-primary-200: #9fa8da; /* Medium-light primary shade - indigo-200 */
+  --color-primary-500: #3f51b5; /* Medium primary shade - indigo-500 */
+  --color-primary-600: #303f9f; /* Medium-dark primary shade - indigo-600 */
+  --color-primary-700: #283593; /* Dark primary shade - indigo-700 */
+  --color-primary-800: #1a237e; /* Darker primary shade - indigo-800 */
+  --color-primary-900: #0d47a1; /* Darkest primary shade - indigo-900 */
+
+  /* Secondary Colors */
+  --color-secondary: #4527a0; /* Innovation signal, quantum inspiration - deep-purple-700 */
+  --color-secondary-50: #ede7f6; /* Light secondary shade - deep-purple-50 */
+  --color-secondary-100: #d1c4e9; /* Light secondary shade - deep-purple-100 */
+  --color-secondary-200: #b39ddb; /* Medium-light secondary shade - deep-purple-200 */
+  --color-secondary-500: #673ab7; /* Medium secondary shade - deep-purple-500 */
+  --color-secondary-600: #5e35b1; /* Medium-dark secondary shade - deep-purple-600 */
+  --color-secondary-700: #4527a0; /* Dark secondary shade - deep-purple-700 */
+  --color-secondary-800: #311b92; /* Darker secondary shade - deep-purple-800 */
+  --color-secondary-900: #1a237e; /* Darkest secondary shade - deep-purple-900 */
+
+  /* Accent Colors */
+  --color-accent: #00e5ff; /* Breakthrough moments, interactive highlights - cyan-400 */
+  --color-accent-50: #e0f7fa; /* Light accent shade - cyan-50 */
+  --color-accent-100: #b2ebf2; /* Light accent shade - cyan-100 */
+  --color-accent-200: #80deea; /* Medium-light accent shade - cyan-200 */
+  --color-accent-300: #4dd0e1; /* Medium accent shade - cyan-300 */
+  --color-accent-400: #00e5ff; /* Primary accent shade - cyan-400 */
+  --color-accent-500: #00bcd4; /* Medium-dark accent shade - cyan-500 */
+  --color-accent-600: #0097a7; /* Dark accent shade - cyan-600 */
+
+  /* Background Colors */
+  --color-background: #fafafa; /* Clean canvas, premium whitespace - gray-50 */
+  --color-surface: #ffffff; /* Content elevation, subtle depth - white */
+  --color-deep-space: #0B1426; /* Deep space blue for quantum backgrounds */
+  --color-quantum-blue: #1E3A5F; /* Quantum blue for secondary backgrounds */
+
+  /* Text Colors */
+  --color-text-primary: #212121; /* Extended reading, maximum clarity - gray-900 */
+  --color-text-secondary: #616161; /* Clear hierarchy, supporting information - gray-600 */
+  --color-text-muted: #6B7280; /* Neutral gray for hierarchy - gray-500 */
+
+  /* Status Colors */
+  --color-success: #00c853; /* Progress confirmation, positive reinforcement - green-400 */
+  --color-success-50: #e8f5e8; /* Light success shade - green-50 */
+  --color-success-100: #c8e6c9; /* Light success shade - green-100 */
+  --color-success-500: #4caf50; /* Medium success shade - green-500 */
+
+  --color-warning: #ff6f00; /* Attention without alarm, status updates - orange-600 */
+  --color-warning-50: #fff3e0; /* Light warning shade - orange-50 */
+  --color-warning-100: #ffe0b2; /* Light warning shade - orange-100 */
+  --color-warning-500: #ff9800; /* Medium warning shade - orange-500 */
+
+  --color-error: #d32f2f; /* Helpful guidance, constructive concern - red-700 */
+  --color-error-50: #ffebee; /* Light error shade - red-50 */
+  --color-error-100: #ffcdd2; /* Light error shade - red-100 */
+  --color-error-500: #f44336; /* Medium error shade - red-500 */
+
+  /* Brand Colors */
+  --color-plasma-orange: #FF6B35; /* Cultural heritage accent - orange-500 */
+  --color-quantum-purple: #7C3AED; /* Call-to-action color - violet-600 */
+  --color-quantum-white: #FAFBFC; /* Premium background canvas - slate-50 */
+  --color-deep-charcoal: #1A1D23; /* Text hierarchy primary - gray-900 */
+
+  /* Border Colors */
+  --color-border: #e0e0e0; /* Functional borders - gray-300 */
+  --color-border-light: #f5f5f5; /* Light borders - gray-100 */
+
+  /* Shadow Colors */
+  --shadow-primary: 0 4px 20px rgba(26, 35, 126, 0.1); /* Primary shadow with brand color */
+  --shadow-subtle: 0 1px 3px rgba(11, 20, 38, 0.1), 0 4px 6px rgba(11, 20, 38, 0.05); /* Layered subtle shadow */
+  --shadow-elevation: 0 2px 8px rgba(0, 0, 0, 0.1); /* Standard elevation shadow */
+}
+
+/* Base Styles */
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Source Sans Pro', system-ui, -apple-system, sans-serif;
+    color: var(--color-text-primary);
+    background-color: var(--color-background);
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--color-text-primary);
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  button {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-weight: 600;
+  }
+
+  code, pre {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 400;
+  }
+}
+
+/* Component Styles */
+@layer components {
+  .btn-primary {
+    @apply bg-quantum-purple text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-secondary-600 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-quantum-purple focus:ring-opacity-50;
+  }
+
+  .btn-secondary {
+    @apply bg-accent text-deep-space px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-accent-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-50;
+  }
+
+  .card {
+    @apply bg-surface rounded-lg shadow-subtle p-6 transition-all duration-300 hover:shadow-elevation;
+  }
+
+  .quantum-gradient {
+    background: linear-gradient(135deg, var(--color-deep-space) 0%, var(--color-primary) 50%, var(--color-secondary) 100%);
+  }
+
+  .particle-bg {
+    background: radial-gradient(circle at 50% 50%, var(--color-accent-200) 0%, transparent 50%);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 50%, var(--color-accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+/* Utility Styles */
+@layer utilities {
+  .animation-quantum {
+    animation: quantum-pulse 2s ease-in-out infinite;
+  }
+
+  .animation-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animation-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes quantum-pulse {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.02);
+      opacity: 0.8;
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 20px var(--color-accent);
+    }
+    to {
+      box-shadow: 0 0 30px var(--color-accent), 0 0 40px var(--color-accent);
+    }
+  }
+
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .transform-style-3d {
+    transform-style: preserve-3d;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+}
