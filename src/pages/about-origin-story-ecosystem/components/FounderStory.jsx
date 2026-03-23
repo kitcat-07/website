@@ -6,7 +6,7 @@ const FounderStory = () => {
   const [activeTab, setActiveTab] = useState('vision');
 
   const founderData = {
-    name: "Praveen S",
+    name: "Exime S",
     title: "Founder & CEO",
     credentials: "Engineering Student, JIT | Self-Taught Innovator | Focused on Future Tech ",
     image: '/public/assets/images/founder.jpg',
@@ -128,7 +128,7 @@ Our approach combines Scientific Rigor with Creative Audacity, Indian Heritage w
               <p className="text-lg font-medium text-text-primary italic">
                 "At Deep Tech-Mystrix, we're not just building technologies — we're engineering a new era where timeless wisdom merges with futuristic innovation. Our mission is to spark humanity’s next leap into an advanced, secure, and purposeful future."
               </p>
-              <p className="text-sm text-text-secondary mt-4">- Praveen S, CEO</p>
+              <p className="text-sm text-text-secondary mt-4">- Exime S, CEO</p>
             </div>
           </div>
         </div>

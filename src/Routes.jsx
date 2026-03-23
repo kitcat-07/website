@@ -13,7 +13,7 @@ import ContactGlobalPresenceHub from "pages/contact-global-presence-hub";
 
 const Routes = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <ErrorBoundary>
         <ScrollToTop />
         <Header />
